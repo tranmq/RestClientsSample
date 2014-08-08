@@ -9,7 +9,7 @@ namespace LinqToXmlRestClient
         static void Main()
         {
             // Can only do GET
-            var root = XDocument.Load("http://10.100.120.133:8080/Prototype/users");
+            var root = XDocument.Load("http://localhost:8080/Prototype/users");
             var reader = root.CreateReader();
             reader.MoveToContent();
             Console.WriteLine("Result:");
